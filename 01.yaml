@@ -1,1 +1,5 @@
--Name: git verfication
+- name: ping server
+  hosts:
+  tasks:
+  - name: ping
+    ansible.builtin.ping:
