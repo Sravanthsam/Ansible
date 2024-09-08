@@ -3,3 +3,4 @@
   tasks: 
   - name: debug
     ansible.builtin.debug:
+      msg: "This is from task 01"
