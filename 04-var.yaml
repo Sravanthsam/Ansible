@@ -6,5 +6,5 @@
     Trainer: Siva kumar reddy
   tasks:
    - name: Intialization
-     ansible.bulitin.drbug:
+     ansible.bulitin.debug:
       msg: "This {{Course}}course total {{Duration}}and trined by {{Trainer}}"
