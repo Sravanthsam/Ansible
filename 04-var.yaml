@@ -1,0 +1,10 @@
+- Name: Varibles
+  Hosts: node
+  var:
+    Course: "DevOps -"
+    Duration: "120 hr"
+    Trainer: Siva kumar reddy
+  tasks:
+   - name: Intialization
+     ansible.bulitin.drbug:
+      msg: "This {{Course}}course total {{Duration}}and trined by {{Trainer}}"
