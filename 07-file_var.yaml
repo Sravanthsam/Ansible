@@ -1,0 +1,7 @@
+- name: varfiles
+  hosts: node
+  var_files: -var-file.yaml
+  tasks:
+  - name: print
+    ansible.builtin.debug:
+      msg: "{{course}}{{duration}}{{trainer}}"
