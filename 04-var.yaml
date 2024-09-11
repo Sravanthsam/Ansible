@@ -5,6 +5,6 @@
     Duration: "120 hr"
     Trainer: Siva kumar reddy
   tasks:
-   - name: Intialization
+   - name: print 
      ansible.bulitin.debug:
       msg: "This {{Course}}course total {{Duration}}and trined by {{Trainer}}"
