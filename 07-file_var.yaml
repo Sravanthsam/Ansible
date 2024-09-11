@@ -1,6 +1,6 @@
 - name: varfiles
   hosts: node
-  var_files: -var-file.yaml
+  vars_files: -var-file.yaml
   tasks:
   - name: print
     ansible.builtin.debug:
