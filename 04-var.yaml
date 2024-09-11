@@ -1,5 +1,5 @@
-- Name: Varibles
-  Hosts: node
+- name: Varibles
+  hosts: node
   var:
     Course: "DevOps -"
     Duration: "120 hr"
