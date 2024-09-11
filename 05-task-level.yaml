@@ -1,0 +1,15 @@
+- name: varbles
+  hosts: node
+  vars: 
+    course: devops
+    duration: 120hrs
+    trainer: siva reddy
+  tasks:
+  - name: print
+    ansible.builtin.debug:
+      msg: "{{course}} {{duration}}{{trainer}}"
+  - name: task level
+    vars: 
+      course: Ansible
+    ansible.bulitin.debug:
+      msg: "{{course}}"
