@@ -1,6 +1,6 @@
 - name: Varibles
   hosts: node
-  var:
+  vars:
     Course: "DevOps -"
     Duration: "120 hr"
     Trainer: Siva kumar reddy
