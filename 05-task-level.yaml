@@ -11,5 +11,5 @@
   - name: task level
     vars: 
       course: Ansible
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
       msg: "{{course}}"
