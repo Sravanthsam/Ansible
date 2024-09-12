@@ -1,5 +1,5 @@
 - name: user creation
-  hosts: localhost
+  hosts: localhosts
   tasks: 
   - name: verify user
     ansible.builtin.command: id expense
@@ -8,4 +8,3 @@
   - name: print user info
     ansible.builtin.debug:
       msg: "user info {{USER}}"
-      
