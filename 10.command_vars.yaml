@@ -1,0 +1,7 @@
+- name: varible
+  hosts: node
+  tasks:
+  - name: print varile from cmd
+    ansible.builtin.debug:
+      msg: "hi {{Name}} good {{gretings}}"
+      

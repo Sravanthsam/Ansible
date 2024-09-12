@@ -1,0 +1,4 @@
+- name: varibles prompt
+  hosts: node
+  vars-prompt:
+    course:

@@ -1,0 +1,6 @@
+- name: varible
+  hosts: node
+  tasks:
+  - name: print var from inventory
+    ansible.builtin.debug:
+      msg: " {{Course}} {{duration}} {{trainer}}"
