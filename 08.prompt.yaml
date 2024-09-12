@@ -1,4 +1,13 @@
 - name: varibles prompt
   hosts: node
   vars-prompt:
-    course:
+    name: course
+    prompt: please enter course name
+    name: duraion
+    prompt: please enter the duration
+    name: trainer
+    prompt: please enter trainer name
+  tasks:
+  - name: print vars from prompt
+    ansible.builtin.debug:
+      msg: " {{course}}  {{duration}}  {{trainer}}"
