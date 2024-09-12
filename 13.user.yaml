@@ -1,6 +1,6 @@
 - name: user creation
   hosts: localhost
-  #connection: local
+  become: yes
   tasks: 
   - name: verify user
     ansible.builtin.command: id expense
