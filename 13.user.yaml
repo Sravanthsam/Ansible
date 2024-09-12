@@ -1,0 +1,11 @@
+- name: user creation
+  hosts: localhost
+  tasks: 
+  - name: verify user
+    ansible.builtin.command: id expense
+    register: USER
+
+  - name: print user info
+    ansible.builtin.debug:
+      msg: "user info {{USER}}"
+      
