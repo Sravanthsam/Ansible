@@ -1,11 +1,11 @@
 - name: varibles prompt
   hosts: node
-  vars-prompt:
-    name: course
+  vars_prompt:
+  - name: course
     prompt: please enter course name
-    name: duraion
+  - name: duraion
     prompt: please enter the duration
-    name: trainer
+  - name: trainer
     prompt: please enter trainer name
   tasks:
   - name: print vars from prompt
