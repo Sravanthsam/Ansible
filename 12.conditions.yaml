@@ -1,6 +1,6 @@
 - name: conditions
   hosts: local
-  connectivity: local
+  connection: local
   vars: 
     name: number
     prompt: enter number
