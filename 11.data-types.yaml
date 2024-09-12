@@ -1,0 +1,19 @@
+- name: data types
+  hosts: local
+  vars:
+    course: Devops #string
+    duration: 120 #number
+    topics: # list
+    - linux
+    - ansible
+    - shell
+    - teraform
+    live: true # boolean
+    tools:
+      ci: jenkins
+      cm: ansible
+      cloud: aws
+  tasks:
+  - name: print data types
+    ansible.builtin.debug:
+      msg: "{{course}} {{duration}} {{topics}} {{live}}  {{tools}}"
