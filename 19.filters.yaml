@@ -1,0 +1,6 @@
+- name: demo on filters/funtions
+  hosts: localhost
+  tasks:
+  - name: print the varible
+    ansible.builtin.debug:
+      msg: "Hello  {{couse}}"
