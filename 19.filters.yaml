@@ -3,4 +3,10 @@
   tasks:
   - name: print the varible
     ansible.builtin.debug:
-      msg: "Hello  {{couse | default('Ansible')}}"
+      msg: "Hello  {{couse | default('Ansible')}}" # assign default value to varible
+
+  - name: uppercase
+    vars:
+      greetings: "good morning"
+    ansible.builtin.debug:
+      msg: "Hi {{gretings | upper}}"
