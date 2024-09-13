@@ -16,3 +16,9 @@
       greetings: "goOd MornIng"
     ansible.builtin.debug:
       msg: "Hi {{greetings | lower}}"
+  
+  - name: min and max
+    vars:
+      numbers: [1,4,8,9,12]
+    ansible.builtin.debug:
+      msg: "MAX num {{number | max}} MIN num {{number| min}}"
